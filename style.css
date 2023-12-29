@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--card-color);
+    width: 50%;
+    padding: 2em;
+    border-radius: 1.5em;
+    margin: 2em auto;
+}
+
+.circle-star {
+    width: 50px;
+    height: 50px;
+    background-color: var(--background-color);
+    border-radius: 50%;
+    padding: 1em;
+}
+
+.p-heading {
+    line-height: 1.5em;
+    font-size: 1.8em;
+    color: var(--white);
+    margin-top: 1em;
+}
+
+.text {
+    margin-top: .5em;
+}
+
+.text,
+.rating-numbers {
+    color: var(--light-grey);
+}
+
+.rating-numbers {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.7em 0;
+    font-weight: bold;
+}
+
+.circle-number {
+    background-color: var(--background-color);
+    border-radius: 50%;
+    padding: 0.8em 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.circle-number:hover {
+    background-color: var(--light-grey);
+    color: var(--white);
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.circle:active {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.selected {
+    background-color: var(--light-grey);
+    color: var(--white);
+}
+
+.evaluation-note {
+    display: block;
+}
+
+.evaluation-note button {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--white);
+    background-color: var(--orange);
+    border: none;
+    width: 100%;
+    padding: 1em;
+    border-radius: 2em;
+    display: block;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.evaluation-note button:active {
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+.evaluation-note button:hover {
+    cursor: pointer;
+}
+
+.tks {
+    display: none;
+    text-align: center;
+}
+
+.tks img {
+    margin-bottom: 1em;
+}
+
+.rating {
+    background-color: var(--mediumGrey);
+    color: var(--orange);
+    border-radius: 1em;
+    padding: 0.4em 1.3em;
+    display: inline-block;
+    margin-bottom: 0.7em;
+}
+
+@media all and (min-width: 500px) {
+    .card {
+        padding: 1.9em;
+        width: 400px;
+    }
+}
